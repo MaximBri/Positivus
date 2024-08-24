@@ -75,4 +75,44 @@ $('.right2').on('click', function (e) {
 // burger-menu
 $('.burger-wrapper').on('click', function () {
   $('.burger-menu').toggleClass('hidden')
+  $('.burger-wrapper').toggleClass('burger-active')
 })
+// callback
+$('.callback-1').on('click', function () {
+  $('.callback').toggleClass('hidden')
+  $('.blured').toggleClass('blur')
+})
+// lazy-load
+// function lazyLoadOnScroll(className, procent) {
+//   const contentBlocks = document.querySelectorAll(`.${className}`);
+//   contentBlocks.forEach(block => {
+//     if (block.getBoundingClientRect().top < window.innerHeight * procent) {
+//       block.classList.add('lazy-load');
+//     } else {
+//       block.classList.remove('lazy-load');
+//     }
+//   });
+// }
+function lazyLoadOnScroll(className, procent) {
+  const contentBlocks = document.querySelectorAll(`.${className}`);
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    contentBlocks.forEach((block) => {
+      block.classList.add('lazy-load');
+    });
+  } else {
+    contentBlocks.forEach(block => {
+          if (block.getBoundingClientRect().top < window.innerHeight * procent) {
+            block.classList.add('lazy-load');
+          } else {
+            block.classList.remove('lazy-load');
+          }
+        });
+  }
+}
+window.addEventListener('scroll', () => {
+  lazyLoadOnScroll('aim', 0.7);
+  // lazyLoadOnScroll('lazy-load-btm', 0.8);
+  // lazyLoadOnScroll('lazy-load-right', 0.7);
+  // lazyLoadOnScroll('lazy-load-z', 0.7);
+});

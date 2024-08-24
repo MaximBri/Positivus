@@ -12,7 +12,7 @@
   <title>Positivus</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header blured">
     <div class="container">
       <div class="header-nav">
         <div class="logo">
@@ -24,7 +24,7 @@
           <a href="#cases" class="header-nav-item">Use Cases</a>
           <a href="#pric" class="header-nav-item">Pricing</a>
           <a href="#blog" class="header-nav-item">Blog</a>
-          <button type="button" class="header-nav-btn button-type1">Request a quote</button>
+          <button type="button" class="header-nav-btn button-type1 callback-1">Request a quote</button>
         </div>
         <a href="#" class="burger-wrapper">
           <div class="header-burger">
@@ -36,17 +36,34 @@
       </div>
       <div class="burger-menu hidden">
         <div class="burger-inner" >
-          <a href="#" class="header-nav-item">About us</a>
-          <a href="#" class="header-nav-item">Services</a>
-          <a href="#" class="header-nav-item">Use Cases</a>
-          <a href="#" class="header-nav-item">Pricing</a>
-          <a href="#" class="header-nav-item">Blog</a>
-          <button type="button" class="header-nav-btn button-type1">Request a quote</button>
+          <a href="#about" class="header-nav-item">About us</a>
+          <a href="#serv" class="header-nav-item">Services</a>
+          <a href="#cases" class="header-nav-item">Use Cases</a>
+          <a href="#pric" class="header-nav-item">Pricing</a>
+          <a href="#blog" class="header-nav-item">Blog</a>
+          <button type="button" class="header-nav-btn button-type1 callback-1">Request a quote</button>
         </div>
       </div>
     </div>
   </header>
-  <main class="main">
+  <section class="callback hidden">
+    <form class="callback-item">
+      <a href="#" class="callback-exit callback-1">
+        <div class="callback-ext-helper">
+          <div class="callback-line"></div>
+          <div class="callback-line"></div>
+        </div>
+      </a>
+      <h3 class="callback-name">Name*</h3>
+      <input type="text" class="callback-inp-name" required placeholder="John">
+      <h3 class="callback-mail">Email</h3>
+      <input type="email" class="callback-inp-mail" placeholder="example@gmail.com">
+      <h3 class="callback-phone">Phone*</h3>
+      <input type="tel" class="callback-inp-phone" required placeholder="+1(234)567-89-01">
+      <button type="submit" class="callback-btn callback-1">Send</button>
+    </form>
+  </section>
+  <main class="main blured">
     <div class="container">
       <div class="page1">
         <div class="page1-top">
@@ -54,7 +71,7 @@
             <h1 class="page1-text-top">Navigating the digital landscape for success</h1>
             <div class="page1-img-media"><img src="./Data/header-services/Illustration-header.svg" alt=""></div>
             <h3 class="page1-text-main">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</h3>
-            <button type="button" class="page1-btn button-type2">Book a consultation</button>
+            <button type="button" class="page1-btn button-type2 callback-1">Book a consultation</button>
           </div>
           <div class="page1-top-right">
             <img src="./Data/header-services/Illustration-header.svg" alt="">
@@ -70,13 +87,13 @@
         </div>
       </div>
       <div class="page2">
-        <div id="serv" class="page2-top">
+        <div id="serv" class="page2-top lazy-load-left aim">
           <span class="page2-name">Services</span>
           <div class="page2-text-main">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</div>
         </div>
         <div class="page2-main">
           <div class="serv-content">
-            <a href="#" class="serv-item">
+            <a href="#" class="serv-item lazy-load-btm aim">
               <div class="serv-item-content">
                 <div class="serv-item-texts">
                   <span class="serv-item-text1">Search engine</span>
@@ -91,7 +108,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="serv-item">
+            <a href="#" class="serv-item lazy-load-btm aim">
               <div class="serv-item-content">
                 <div class="serv-item-texts">
                   <span class="serv-item-text1">Pay-per-click</span>
@@ -106,7 +123,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="serv-item">
+            <a href="#" class="serv-item lazy-load-btm aim">
               <div class="serv-item-content">
                 <div class="serv-item-texts">
                   <span class="serv-item-text1">Social Media</span>
@@ -121,7 +138,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="serv-item">
+            <a href="#" class="serv-item lazy-load-btm aim">
               <div class="serv-item-content">
                 <div class="serv-item-texts">
                   <span class="serv-item-text1">Email</span>
@@ -136,7 +153,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="serv-item">
+            <a href="#" class="serv-item lazy-load-btm aim">
               <div class="serv-item-content">
                 <div class="serv-item-texts">
                   <span class="serv-item-text1">Content</span>
@@ -151,7 +168,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="serv-item">
+            <a href="#" class="serv-item lazy-load-btm aim">
               <div class="serv-item-content">
                 <div class="serv-item-texts">
                   <span class="serv-item-text1">Analytics and </span>
@@ -168,7 +185,7 @@
             </a>
           </div>
         </div>
-        <div class="page2-btm">
+        <div class="page2-btm lazy-load-right aim">
           <div class="page2-btm-box">
             <h2 class="serv-btm-text-top">
               Let’s make things happen
@@ -185,11 +202,11 @@
       </div>
       <div class="page3">
         <section id="cases" class="case">
-          <div class="case-texts">
+          <div class="case-texts lazy-load-left aim">
             <h2 class="case-name">Case Studies</h2>
             <h3 class="case-text-top">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</h3>
           </div>
-          <div class="case-box">
+          <div class="case-box lazy-load-z aim">
             <div class="case-item">
               <p class="case-item-text">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
               <a href="#" class="case-item-link">
@@ -214,12 +231,12 @@
           </div>
         </section>
         <section class="proc">
-          <div class="proc-texts">
+          <div class="proc-texts lazy-load-left aim">
             <h2 class="proc-name">Our Working Process </h2>
             <h3 class="proc-text-main">Step-by-Step Guide to . Your Business Goals</h3>
           </div>
           <ul class="proc-acc">
-              <li class="proc-accs-box">
+              <li class="proc-accs-box lazy-load-btm aim">
                 <a href="#" class="acc-item">
                     <img class="acc-minus" src="./Data/working process/minus-icon.png" alt="">
                     <img class="acc-plus" src="./Data/working process/Plus-icon.png" alt="">
@@ -232,7 +249,7 @@
                   </div>
                 </a>
               </li>
-              <li class="proc-accs-box">
+              <li class="proc-accs-box lazy-load-btm aim">
                 <a href="#" class="acc-item">
                   <img class="acc-minus" src="./Data/working process/minus-icon.png" alt="">
                   <img class="acc-plus" src="./Data/working process/Plus-icon.png" alt="">
@@ -245,7 +262,7 @@
                   </div>
                 </a>
               </li>
-              <li class="proc-accs-box">
+              <li class="proc-accs-box lazy-load-btm aim">
                 <a href="#" class="acc-item">
                   <img class="acc-minus" src="./Data/working process/minus-icon.png" alt="">
                   <img class="acc-plus" src="./Data/working process/Plus-icon.png" alt="">
@@ -258,7 +275,7 @@
                   </div>
                 </a>
               </li>
-              <li class="proc-accs-box">
+              <li class="proc-accs-box lazy-load-btm aim">
                 <a href="#" class="acc-item">
                   <img class="acc-minus" src="./Data/working process/minus-icon.png" alt="">
                   <img class="acc-plus" src="./Data/working process/Plus-icon.png" alt="">
@@ -271,7 +288,7 @@
                   </div>
                 </a>
               </li>
-              <li class="proc-accs-box">
+              <li class="proc-accs-box lazy-load-btm aim">
                 <a href="#" class="acc-item">
                   <img class="acc-minus" src="./Data/working process/minus-icon.png" alt="">
                   <img class="acc-plus" src="./Data/working process/Plus-icon.png" alt="">
@@ -284,7 +301,7 @@
                   </div>
                 </a>
               </li>
-              <li class="proc-accs-box">
+              <li class="proc-accs-box lazy-load-btm aim">
                 <a href="#" class="acc-item">
                   <img class="acc-minus" src="./Data/working process/minus-icon.png" alt="">
                     <img class="acc-plus" src="./Data/working process/Plus-icon.png" alt="">
@@ -301,7 +318,7 @@
         </section>
         <section class="team">
           <div class="team-texts">
-            <div class="team-nav-info">
+            <div class="team-nav-info lazy-load-left aim">
               <h2 class="team-sect-name">Team</h2>
               <h3 class="team-text-main">Meet the skilled and experienced team behind our successful digital marketing strategies</h3>
             </div>
@@ -318,7 +335,7 @@
           </div>
           <span class="page3-header-nav">
             </span>
-            <div class="team__slider">
+            <div class="team__slider lazy-load-right aim">
               <a href="#" class="team__slide">
                 <div class="team-slide-head">
                   <img src="./Data/team/1.png" alt="">
@@ -404,12 +421,12 @@ Skilled in creating compelling, SEO-optimized content for various industries
             </div>
         </section>
         <section class="test">
-          <div class="test-texts">
+          <div class="test-texts lazy-load-left aim">
             <h2 class="test-name">Testimonials</h2>
             <p class="test-text-main">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
           </div>
           <div class="test-sliders-box">
-            <div class="test__sliders">
+            <div class="test__sliders lazy-load-z aim">
                 <div class="test__slide">
                   <div class="test__slide-top">
                     <!-- <img src="./Data/testimonial/Bubble.png" alt=""> -->
@@ -477,7 +494,7 @@ Skilled in creating compelling, SEO-optimized content for various industries
             </div>
           </div>
         </section>
-        <section class="cont">
+        <section class="cont lazy-load-btm aim">
           <div class="cont-texts">
             <h2 class="cont-name">Contact Us</h2>
             <h3 class="cont-text-main">Connect with Us: Let's Discuss Your Digital Marketing Needs</h3>
@@ -508,7 +525,7 @@ Skilled in creating compelling, SEO-optimized content for various industries
       </div>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer lazy-load-btm blured aim">
     <div class="container">
       <div class="footer-container">
         <ul class="footer-nav">
@@ -549,7 +566,7 @@ Skilled in creating compelling, SEO-optimized content for various industries
           <div class="footer-main-right">
             <form class="footer-form">
               <input type="email" placeholder="Email">
-              <button class="footer-btn">Subscribe to news</button>
+              <button type="submit" class="footer-btn">Subscribe to news</button>
             </form>
           </div>
         </div>
